@@ -7,8 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="draw-board"></div>
+<body>     
+    <div id="board">
+        <div id="title">
+            <p id="title-text">ETCH-A-SKETCH</p>
+        </div>
+        <div id="interact">
+            <div id="selection-grid">
+                <button id="select-16">16x16</button>
+                <button id="select-32">32x32</button>
+                <button id="select-64">64x64</button>
+                <button id="select-128">128x128</button>
+                <button id="clear">Clear</button>
+            </div>
+            <div id="draw-board"></div>
+            <div id="selection-color">
+                <input type="color" id="color-picker">
+                <button id="eraser">Eraser</button>
+                <button id="rainbow">Rainbow</button>
+            </div>
+        </div>
+    </div>  
     <script src="script.js"></script>
 </body>
 </html>
